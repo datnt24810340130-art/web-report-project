@@ -1,0 +1,96 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial;
+}
+body{
+    background: #f5f7fa;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.thanh-tren{
+    background-color: rgba(4, 9, 100, 0.92);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+}
+.thong-tin-trai span{
+    margin-right: 10px;
+}
+.thong-tin-phai i{
+    margin-left: 10px;
+}
+.menu{
+    background-color: white;
+    color: rgba(4, 9, 100, 0.92);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.danh-sach-menu{
+    display: flex;
+    gap: 60px;
+}
+.nut-menu{
+    margin-right: 40px;
+}
+.nut-menu a{
+    
+    color: rgba(244, 161, 6, 0.927);
+    margin: 0 10px;
+}
+.banner{
+    height: 550px;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.noi-dung-banner{
+    color: white;
+    margin-left: 100px;
+}
+.noi-dung-banner h1{
+    font-size: 50px;
+}
+.noi-dung-banner h3{
+    font-size: 40px;
+    color: rgb(255, 215, 0); 
+}
+.hop-tim-kiem{
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+.hop-tim-kiem input{
+    padding: 10px;
+    border: 0px solid white;
+}
+.hop-tim-kiem button{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: 0px solid white;
+}

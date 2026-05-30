@@ -3,69 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Bán Hàng</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>TravelViet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
 
+<body>
     <!-- HEADER -->
     <header>
-        <div class="logo">ShopMax</div>
-
-        <nav>
-            <a href="#">Trang chủ</a>
-            <a href="#">Sản phẩm</a>
-            <a href="#">Khuyến mãi</a>
-            <a href="#">Liên hệ</a>
+        <div class="thanh-tren">
+            <div class="thong-tin-trai">
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    dhdl@travelviet.com |
+                </span>
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    1900 1234 567
+                </span>
+            </div>
+            <div class="thong-tin-phai">
+                <span>
+                    Theo dõi chúng tôi:
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </span>
+                
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="logo">
+                <img src="../images/logo.png">
+                <h2>TRAVELVIET</h2>
+            </div>
+            <ul class="danh-sach-menu">
+                <li><a href="#" class="dang-chon">TRANG CHỦ</a></li>
+                <li><a href="tours.html">TOUR DU LỊCH</a></li>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
+            </ul>
+            <div class="nut-menu">
+                <a href="login.html">Đăng nhập</a>
+                <a href="register.html">Đăng ký</a>
+            </div>
         </nav>
-
-        <div class="cart">
-            🛒 Giỏ hàng
-        </div>
     </header>
-
-    <!-- BANNER -->
+    
     <section class="banner">
-        <div class="banner-text">
-            <h1>Giảm giá đến 50%</h1>
-            <p>Mua sắm sản phẩm công nghệ giá tốt</p>
-            <button>Mua ngay</button>
+        <div class="noi-dung-banner">
+            <h1>KHÁM PHÁ VIỆT NAM</h1>
+            <h3>Đi để yêu hơn!</h3>
+            <h4>
+                Cùng TravelViet khám phá những vùng đất tuyệt đẹp,<br>
+                trải nghiệm hành trình đáng nhớ.
+            </h4>
+            <div class="hop-tim-kiem">
+                <input type="text" placeholder="Bạn muốn đi đâu?">
+                <input type="date">
+                <input type="number" placeholder="Số người">
+                <button>Tìm kiếm</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="dia-diem">
+        <h2>ĐIỂM ĐẾN NỔI BẬT</h2>
+        <div class="danh-sach-dia-diem">
+            <div class="dia-diem-noi-bat">
+                <img src="../images/destinations/sapa.png">
+                <div class="thong-tin-dia-diem">
+                    <h3>SaPa</h3>
+                    <p>Nơi gặp gỡ đất trời</p>
+                </div>
+            </div>
+            <div class="dia-diem-noi-bat">
+                <img src="../images/destinations/danang.png">
+                <div class="thong-tin-dia-diem">
+                    <h3>Đà Nẵng</h3>
+                    <p>Thành phố đáng sống</p>
+                </div>
+            </div>
+            <div class="dia-diem-noi-bat">
+                <img src="../images/destinations/halong.png">
+                <div class="thong-tin-dia-diem">
+                    <h3>Hạ Long</h3>
+                    <p>Kỳ quan thiên nhiên</p>
+                </div>
+            </div>
+            <div class="dia-diem-noi-bat">
+                <img src="../images/destinations/phuquoc.png">
+                <div class="thong-tin-dia-diem">
+                    <h3>Phú Quốc</h3>
+                    <p>Thiên đường biển đảo</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- PRODUCT -->
-    <section class="products">
+    <section class="tour">
+        <h2>Các Tour hàng đầu</h2>
+        <div class="danh-sach-tour">
+            <div class="tour-hang-dau">
+                <img src="../images/tour/sunworld.png">
+                <div class="thong-tin-tour">
+                    <h3>Sun World Bà Nà Hills</h3>
+                    <p>Sứ sở thần tiên</p>
+                    <p>3 ngày 2 đêm</p>
+                    <span>8000000</span>
+                </div>
+            </div>
+            <div class="tour-hang-dau">
+                <img src="../images/tour/fansipan.png">
+                <div class="thong-tin-tour">
+                    <h3>FansiFan</h3>
+                    <p>Nóc nhà Đông Dương</p>
+                    <p>2 ngày 1 đêm</p>
+                    <span>5000000</span>
+                </div>
+            </div>
+            <div class="tour-hang-dau">
+                <img src="../images/tour/hoxuanhuong.png">
+                <div class="thong-tin-tour">
+                    <h3>Hồ Xuân Hương</h3>
+                    <p>Trái tim Đà Lạt</p>
+                    <p>3 ngày 2 đêm</p>
+                    <span>10000000</span>
+                </div>
+            </div>
+            <div class="tour-hang-dau">
+                <img src="../images/tour/hoxuanhuong.png">
+                <div class="thong-tin-tour">
+                    <h3>Đại hội Huế</h3>
+                    <p>Di sản văn hóa</p>
+                    <p>3 ngày 2 đêm</p>
+                    <span>15000000</span>
+                </div>
+            </div>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h3>Iphone 14</h3>
-            <p>20.000.000đ</p>
-            <button>Mua ngay</button>
-        </div>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h3>Laptop Gaming</h3>
-            <p>25.000.000đ</p>
-            <button>Mua ngay</button>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="">
-            <h3>Tai nghe Sony</h3>
-            <p>3.000.000đ</p>
-            <button>Mua</button>
         </div>
 
     </section>
-
     <!-- FOOTER -->
-    <footer>
-        <p>© 2026 ShopMax</p>
-    </footer>
+<footer>
+    <div class="khung-footer">
 
+        <!-- Cột 1: Logo TravelViet -->
+        <div class="cot-footer">
+            <div class="logo-footer">
+                <img src="../images/logo.png" alt="Logo TravelViet">
+                <h3>TRAVELVIET</h3>
+            </div>
+
+            <p>
+                TravelViet là công ty du lịch uy tín hàng đầu Việt Nam,
+                chuyên tổ chức các tour trong nước với chất lượng dịch vụ
+                tận tâm, giá cả hợp lý và những trải nghiệm đáng nhớ.
+            </p>
+
+            <div class="icon-mxh">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <!-- Cột 2: Thông tin liên hệ -->
+        <div class="cot-footer">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                123 Đường Cầu Giấy, Hà Nội
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                1900 1234 567
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                dhdl@travelviet.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                08:00 - 22:00 (Tất cả các ngày)
+            </p>
+        </div>
+
+        <!-- Cột 3: Liên kết nhanh -->
+        <div class="cot-footer">
+            <h3>LIÊN KẾT NHANH</h3>
+
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="tours.html">Tour du lịch</a></li>
+                <li><a href="#">Điểm đến</a></li>
+                <li><a href="#">Cẩm nang</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <!-- Cột 4: Hỗ trợ khách hàng -->
+        <div class="cot-footer">
+            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+
+            <ul>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Hướng dẫn đặt tour</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách hủy tour</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="ban-quyen">
+        <p>© 2024 TravelViet. All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
-
-
