@@ -94,7 +94,7 @@ const danhSachDuLieuTour = [
         thoiGian: "3n2d",
         thoiGianHienThi: "3 ngày 2 đêm",
         soKhach: "10+ khách",
-        anh: "../images/tour/hue.jpg",
+        anh: "../images/tour/codohue.jpg",
         link: "tour-co-do-hue.html",
         moTa: "Tham quan Đại Nội, chùa Thiên Mụ, lăng vua Nguyễn và khám phá văn hóa cung đình.",
         dacTrung: ["Di sản", "Cung đình", "Lịch sử"],
@@ -227,7 +227,7 @@ function taoTheTour(tour) {
             <div class="anh-tour">
                 <img src="${tour.anh}" alt="Tour ${tour.ten}">
                 <span class="nhan-tour mien-${tour.mien}">${tour.nhanMien}</span>
-                <i class="fa-regular fa-heart tim-tour"></i>
+                
             </div>
 
             <div class="noi-dung-the-tour">
