@@ -17,52 +17,104 @@ img{
     width: 100%;
     display: block;
 }
-.thanh-tren{
-    background-color: rgba(4, 9, 100, 0.92);
-    color: white;
+/* Thanh trên */
+.thanh-tren {
+    background: #123c69;
+    color: #fff;
+    padding: 9px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 70px;
+    font-size: 14px;
 }
-.thong-tin-trai span{
-    margin-right: 10px;
+
+.thong-tin-trai,
+.thong-tin-phai {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
-.thong-tin-phai i{
-    margin-left: 10px;
+
+.thong-tin-phai a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
 }
-.menu{
-    background-color: white;
-    color: rgba(4, 9, 100, 0.92);
+
+.thong-tin-phai a:hover {
+    color: #ffb703;
+}
+
+.menu {
+    padding: 14px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #fff;
+    color: #123c69;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    gap: 10px;
+    margin-left: 0;
 }
-.logo img{
-    width: 80px;
-    height: 80px;
+
+.logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
 }
-.danh-sach-menu{
+
+.logo h2 {
+    color: #123c69;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.danh-sach-menu {
     display: flex;
-    gap: 60px;
+    align-items: center;
+    gap: 28px;
 }
-.nut-menu{
-    margin-right: 40px;
+
+.danh-sach-menu a {
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
 }
-.nut-menu a{
-    
-    color: rgba(244, 161, 6, 0.927);
-    margin: 0 10px;
+
+.danh-sach-menu a:hover,
+.danh-sach-menu .dang-chon {
+    color: #0b73c9;
+}
+
+.nut-menu {
+    margin-right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nut-menu a {
+    background: #0b73c9;
+    color: #fff;
+    padding: 9px 15px;
+    border-radius: 22px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nut-menu a:hover {
+    background: #ff7a00;
 }
 .banner{
     height: 550px;
     background-image: url(../images/banner.png);
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
 }
