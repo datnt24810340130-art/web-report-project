@@ -212,16 +212,16 @@ img{
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px 90px;
-    background-color:rgba(4, 9, 100, 0.92);
+    background-color:#123c69;
 }
 .cot-footer{
-    
     width: 20%;
     color: white;
 }
 .cot-footer img{
     width: 60px;
     height: 60px;
+    display: block;
 }
 .cot-footer a{
     color: white;
