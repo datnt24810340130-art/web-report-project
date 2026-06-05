@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eefbff;
+  color: #314957;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Thanh trên */
+.navbar {
+  background: #003b5c;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo,
+footer b {
+  color: #f2b84b;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu a {
+  color: white;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+/* Banner */
+.hero {
+  min-height: 460px;
+  background:
+    linear-gradient(rgba(0,59,92,.48), rgba(0,109,156,.55)),
+    url("../images/halong/halong.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 15px 0;
+}
+
+.label,
+.tags span {
+  background: rgba(255,255,255,.22);
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Nội dung */
+.wrap {
+  max-width: 1180px;
+  margin: auto;
+  padding: 20px 40px;
+}
+
+.layout,
+.grid-card {
+  display: grid;
+  gap: 25px;
+}
+
+.layout {
+  grid-template-columns: 1fr 320px;
+}
+
+.grid-card {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.back,
+h2,
+h3,
+.booking span {
+  color: #006d9c;
+}
+
+h2 {
+  border-left: 5px solid #f2b84b;
+  padding-left: 12px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Khối trắng */
+.box,
+.card,
+.day,
+.review,
+.comment,
+.booking {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,70,110,.12);
+}
+
+.card {
+  text-align: center;
+  padding: 0 0 15px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 140px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 12px 8px 6px;
+}
+
+.card p {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+/* Lịch trình */
+.day h3 {
+  background: #006d9c;
+  color: white;
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
+.day p,
+.booking li {
+  border-bottom: 1px solid #e0eef5;
+  padding: 8px 0;
+}
+
+.booking ul {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.sidebar {
+  position: sticky;
+  top: 85px;
+}
+
+/* Bảng */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #e0eef5;
+}
+
+th {
+  background: #006d9c;
+  color: white;
+}
+
+/* Nút */
+.btn,
+.btn-outline {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn {
+  background: #006d9c;
+  color: white;
+}
+
+.btn-outline {
+  color: #006d9c;
+  border: 2px solid #006d9c;
+}
+
+.note,
+.hotline {
+  color: #777;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #003b5c;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout,
+  .grid-card {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu a {
+    margin: 0 8px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .wrap {
+    padding: 20px;
+  }
+}

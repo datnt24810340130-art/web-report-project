@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour du lịch - TravelViet</title>
+  <link rel="stylesheet" href="../css/tours.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <div><i class="fa-solid fa-envelope"></i> dhdl@travelviet.com &nbsp; <i class="fa-solid fa-phone"></i> 1900 1234 567</div>
+    <div>
+      Theo dõi: &nbsp;
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html" class="logo"><img src="../images/logo.png" alt="Logo"><h2>TRAVELVIET</h2></a>
+    <ul>
+      <li><a href="index.html">TRANG CHỦ</a></li>
+      <li><a href="tours.html" class="active">TOUR DU LỊCH</a></li>
+      <li><a href="about.html">GIỚI THIỆU</a></li>
+      <li><a href="news.html">TIN TỨC</a></li>
+      <li><a href="contact.html">LIÊN HỆ</a></li>
+    </ul>
+    <div class="auth">
+      <a href="login.html">Đăng nhập</a>
+      <a href="register.html">Đăng ký</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="breadcrumb"><a href="index.html">Home</a> / Danh sách tour du lịch</div>
+
+  <div class="layout">
+
+    <!-- BỘ LỌC -->
+    <aside class="sidebar">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="timKiem" placeholder="Tìm tour...">
+      </div>
+
+      <div class="filter-group">
+        <h3>Địa điểm</h3>
+        <label><input type="checkbox" class="loc-mien" value="bac"> Miền Bắc</label>
+        <label><input type="checkbox" class="loc-mien" value="trung"> Miền Trung</label>
+        <label><input type="checkbox" class="loc-mien" value="nam"> Miền Nam</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Giá tour</h3>
+        <label><input type="checkbox" class="loc-gia" value="duoi-3"> Dưới 3 triệu</label>
+        <label><input type="checkbox" class="loc-gia" value="3-5"> Từ 3 - 5 triệu</label>
+        <label><input type="checkbox" class="loc-gia" value="tren-5"> Trên 5 triệu</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Thời gian</h3>
+        <label><input type="checkbox" class="loc-tg" value="1-ngay"> 1 ngày</label>
+        <label><input type="checkbox" class="loc-tg" value="2n1d"> 2 ngày 1 đêm</label>
+        <label><input type="checkbox" class="loc-tg" value="3n2d"> 3 ngày 2 đêm</label>
+        <label><input type="checkbox" class="loc-tg" value="4n3d"> 4 ngày 3 đêm</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Dịch vụ</h3>
+        <label><input type="checkbox" class="loc-dv" value="an-uong"> Ăn uống</label>
+        <label><input type="checkbox" class="loc-dv" value="huong-dan-vien"> Hướng dẫn viên</label>
+        <label><input type="checkbox" class="loc-dv" value="khach-san"> Khách sạn</label>
+        <label><input type="checkbox" class="loc-dv" value="xe-dua-don"> Xe đưa đón</label>
+      </div>
+
+      <button id="xoaLoc">Xóa bộ lọc</button>
+    </aside>
+
+    <!-- DANH SÁCH TOUR -->
+    <section class="content">
+      <div class="content-header">
+        <div>
+          <h1>DANH SÁCH TOUR DU LỊCH</h1>
+          <p>Khám phá các tour nổi bật theo từng vùng miền với giá và thông tin rõ ràng.</p>
+        </div>
+        <select id="sapXep">
+          <option value="mac-dinh">Sắp xếp nổi bật</option>
+          <option value="gia-thap-cao">Giá thấp → cao</option>
+          <option value="gia-cao-thap">Giá cao → thấp</option>
+        </select>
+      </div>
+
+      <p class="count">Hiển thị <span id="soTour">12</span> tour phù hợp</p>
+      <div class="grid" id="danhSach"></div>
+
+      <div class="empty" id="empty">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <h3>Không tìm thấy tour phù hợp</h3>
+        <p>Hãy thử bỏ bớt bộ lọc hoặc dùng từ khóa khác.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="logo"><img src="../images/logo.png" alt="Logo"><h3>TRAVELVIET</h3></div>
+      <p>Công ty du lịch uy tín hàng đầu Việt Nam, dịch vụ tận tâm, giá hợp lý.</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3>LIÊN HỆ</h3>
+      <p><i class="fa-solid fa-location-dot"></i> 123 Cầu Giấy, Hà Nội</p>
+      <p><i class="fa-solid fa-phone"></i> 1900 1234 567</p>
+      <p><i class="fa-solid fa-envelope"></i> dhdl@travelviet.com</p>
+      <p><i class="fa-solid fa-clock"></i> 08:00 - 22:00, mỗi ngày</p>
+    </div>
+    <div>
+      <h3>LIÊN KẾT</h3>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="tours.html">Tour du lịch</a></li>
+        <li><a href="news.html">Cẩm nang</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>HỖ TRỢ</h3>
+      <ul>
+        <li><a href="faq.html">Câu hỏi thường gặp</a></li>
+        <li><a href="booking-guide.html">Hướng dẫn đặt tour</a></li>
+        <li><a href="payment-policy.html">Chính sách thanh toán</a></li>
+        <li><a href="cancel-policy.html">Chính sách hủy tour</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2024 TravelViet. All Rights Reserved.</div>
+</footer>
+
+<script src="../js/tours.js"></script>
+</body>
+</html>
