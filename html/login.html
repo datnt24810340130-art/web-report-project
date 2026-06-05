@@ -1,22 +1,137 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Đăng nhập</title>
-<link rel="stylesheet" href="../css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <nav class="menu">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.png">
+            </a>
+            
+        </div>
+        <h2>TRAVELVIET</h2>
+        <h2>Đăng Nhập</h2>
+        <p>bạn cần giúp gì?</p>
+    </nav>
 
-<div class="login-box">
-    <h1>ĐĂNG NHẬP</h1>
-
-    <input type="text" placeholder="Tên đăng nhập">
-
-    <input type="password" placeholder="Mật khẩu">
-
-    <button>Đăng nhập</button>
+<div class="login-page">
+    <div class="login-box">
+        <h1>ĐĂNG NHẬP TÀI KHOẢN</h1>
+        <form>
+            <input type="text" placeholder="Email/Số Điện Thoại">
+            <div class="password-box">
+                <input type="password" placeholder="Mật khẩu" >
+                <i class="fa-solid fa-eye"></i>         
+            </div>
+            <a href="forgot.html" class="forgot">Quên mật khẩu?</a><br>
+            <button type="button" class="nut-dang-nhap">Đăng Nhập</button>
+            <button type="button" class="google">
+                <i class="fa-brands fa-google"></i>
+                Đăng nhập với Google
+            </button>
+            <button type="button" class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+                Đăng nhập với Facebook
+            </button>
+            <p>
+                Chưa có tài khoản?
+                <a href="register.html">Đăng ký ngay</a>
+            </p>
+        </form>
+    </div>
 </div>
+<footer>
+    <div class="khung-footer">
+        
+        <!-- Cột 1: Logo TravelViet -->
+        <div class="cot-footer">
+            <div class="logo-footer">
+                <a href="index.html">
+                    <img src="../images/logo.png">  
+                </a>
+                <div class="noi-dung-logo-footer">
+                    <p>
+                    TravelViet là công ty du lịch uy tín hàng đầu Việt Nam,
+                    chuyên tổ chức các tour trong nước với chất lượng dịch vụ
+                    tận tâm, giá cả hợp lý và những trải nghiệm đáng nhớ.<br>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </p>
+                </div>
+            </div>    
+        </div>
+
+        <!-- Cột 2: Thông tin liên hệ -->
+        <div class="cot-footer">
+             <h3>THÔNG TIN LIÊN HỆ</h3>
+            <div class="thong-tin-lien-he">
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                123 Đường Cầu Giấy, Hà Nội
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                1900 1234 567
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                dhdl@travelviet.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                08:00 - 22:00 (Tất cả các ngày)
+            </p>
+            </div>
+        </div>
+
+        <!-- Cột 3: Liên kết nhanh -->
+        <div class="cot-footer">
+            <h3>LIÊN KẾT NHANH</h3>
+            <div class="lien-ket-nhanh">
+                
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="tours.html">Tour du lịch</a></li>
+                <li><a href="#">Điểm đến</a></li>
+                <li><a href="#">Cẩm nang</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Cột 4: Hỗ trợ khách hàng -->
+        <div class="cot-footer">
+           <div class="ho-tro-khach-hang">
+             <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+
+            <ul>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Hướng dẫn đặt tour</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách hủy tour</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+            </ul>
+           </div>
+        </div>
+
+    </div>
+
+    <div class="ban-quyen">
+        <p>© 2024 TravelViet. All Rights Reserved.</p>
+    </div>
+</footer>
 
 <script src="../js/login.js"></script>
 </body>

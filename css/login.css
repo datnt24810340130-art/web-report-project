@@ -1,34 +1,123 @@
-body{
-    background:#0d5eff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    font-family:Arial;
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
 }
 
+.menu img{
+    width: 80px;
+    height: 80px;
+}
+.menu h2{
+    margin-right: 10px;
+}
+.menu p{
+    margin-left: 60%;
+    font-size: 20px;
+    color: rgb(234, 62, 4);
+}
+.login-page{
+    
+    background: url(../images/login/backgroud.png);
+   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 150px;
+}
 .login-box{
-    background:white;
-    width:400px;
-    padding:40px;
-    border-radius:10px;
+    width: 430px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
 }
-
-.login-box h1{
-    text-align:center;
-    margin-bottom:30px;
-}
-
 .login-box input{
-    width:100%;
-    padding:15px;
-    margin-bottom:20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    
 }
 
-.login-box button{
-    width:100%;
-    padding:15px;
-    background:#0d5eff;
-    color:white;
-    border:none;
+.forgot{
+    float: right;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.nut-dang-nhap{
+    width: 100%;
+    background-color: rgb(10, 2, 122);
+    color: white;
+    border-radius: 10px;
+    border:  none;
+    font-size: 20px;
+    padding: 12px;
+    margin-top: 10px;
+}
+.google{
+    width: 49%;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    
+}
+.facebook{
+    width: 49%;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.facebook i{
+color: #1877f2;
+}
+.google i{
+    color:#45db37 ;
+}
+.login-box p a{
+color: #123c69;
+text-decoration: none;
+font-size: 20px;
+}
+.login-box p{
+    text-align: center;
+}
+.khung-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 90px;
+    background-color:#123c69;
+}
+.cot-footer{
+    width: 20%;
+    color: white;
+}
+.cot-footer img{
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.cot-footer a{
+    color: white;
+    text-decoration: none;
+    
+}
+.cot-footer h3{
+    margin-right: 40px;
+}
+.thong-tin-lien-he p{
+    margin: 10px 0;
+}
+.cot-footer ul{
+    margin-top: 15px;
+}
+.cot-footer li{
+    margin-bottom: 10px;
+}
+.ban-quyen {
+    text-align: center;
 }
