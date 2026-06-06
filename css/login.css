@@ -1,7 +1,17 @@
+
+body{
+    background: #f5f7fa;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
 .menu{
     display: flex;
     align-items: center;
-    padding: 0 80px;
+    padding: 15px 80px;
 }
 
 .menu img{
@@ -12,14 +22,16 @@
     margin-right: 10px;
 }
 .menu p{
-    margin-left: 60%;
+    margin-left: auto;
     font-size: 20px;
     color: rgb(234, 62, 4);
 }
 .login-page{
-    
     background: url(../images/login/backgroud.png);
-   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -91,7 +103,7 @@ font-size: 20px;
     align-items: flex-start;
     padding: 30px 90px;
     background-color:#123c69;
-}
+}    
 .cot-footer{
     width: 20%;
     color: white;
@@ -106,6 +118,10 @@ font-size: 20px;
     text-decoration: none;
     
 }
+.noi-dung-logo-footer a{
+    font-size: 22px;
+    margin-right: 12px;
+}
 .cot-footer h3{
     margin-right: 40px;
 }
@@ -114,10 +130,88 @@ font-size: 20px;
 }
 .cot-footer ul{
     margin-top: 15px;
+    margin-right: 20px;
+
 }
 .cot-footer li{
     margin-bottom: 10px;
 }
-.ban-quyen {
+.ban-quyen{
     text-align: center;
+    background-color: #0d2d4f;
+    color: white;
+    padding: 10px 0;
+}
+@media (max-width:992px){
+
+    .menu{
+        padding: 15px 30px;
+    }
+
+    .menu p{
+        font-size: 16px;
+    }
+
+    .login-page{
+        padding: 60px 30px;
+        justify-content: center;
+    }
+
+    .login-box{
+        width: 450px;
+    }
+
+    .khung-footer{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .cot-footer{
+        width: 45%;
+    }
+}
+@media (max-width:768px){
+
+    .menu{
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .menu p{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .login-page{
+        padding: 30px 15px;
+        justify-content: center;
+    }
+
+    .login-box{
+        width: 100%;
+        max-width: 400px;
+        padding: 25px;
+    }
+
+    .login-box h1{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .google,
+    .facebook{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .khung-footer{
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .cot-footer{
+        width: 100%;
+        margin-bottom: 25px;
+    }
 }
