@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff1df;
+  color: #46392f;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Thanh trên */
+.navbar {
+  background: #8c3f13;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo,
+footer b {
+  color: #ffd166;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu a {
+  color: white;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+/* Banner */
+.hero {
+  min-height: 460px;
+  background:
+    linear-gradient(rgba(140,63,19,.48), rgba(0,112,134,.42)),
+    url("../images/muine/muine.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 15px 0;
+}
+
+.label,
+.tags span {
+  background: rgba(255,255,255,.22);
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Nội dung */
+.wrap {
+  max-width: 1180px;
+  margin: auto;
+  padding: 20px 40px;
+}
+
+.layout,
+.grid-card {
+  display: grid;
+  gap: 25px;
+}
+
+.layout {
+  grid-template-columns: 1fr 320px;
+}
+
+.grid-card {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.back,
+h2,
+h3,
+.booking span {
+  color: #8c3f13;
+}
+
+h2 {
+  border-left: 5px solid #007086;
+  padding-left: 12px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Khối trắng */
+.box,
+.card,
+.day,
+.review,
+.comment,
+.booking {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(140,63,19,.12);
+}
+
+.card {
+  text-align: center;
+  padding: 0 0 15px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 140px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 12px 8px 6px;
+}
+
+.card p {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+/* Lịch trình */
+.day h3 {
+  background: #8c3f13;
+  color: white;
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
+.day p,
+.booking li {
+  border-bottom: 1px solid #ead4bc;
+  padding: 8px 0;
+}
+
+.booking ul {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.sidebar {
+  position: sticky;
+  top: 85px;
+}
+
+/* Bảng */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ead4bc;
+}
+
+th {
+  background: #8c3f13;
+  color: white;
+}
+
+/* Nút */
+.btn,
+.btn-outline {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn {
+  background: #8c3f13;
+  color: white;
+}
+
+.btn-outline {
+  color: #8c3f13;
+  border: 2px solid #8c3f13;
+}
+
+.note,
+.hotline {
+  color: #777;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #8c3f13;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout,
+  .grid-card {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu a {
+    margin: 0 8px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .wrap {
+    padding: 20px;
+  }
+}
