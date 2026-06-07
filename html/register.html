@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dang Ky</title>
+    <title>Đăng Ký</title>
     <link rel="stylesheet" href="../css/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -48,26 +48,26 @@
 
         <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
 
-        <form>
+        <form id="registerForm">
 
-            <input type="text" placeholder="Họ và tên">
+            <input type="text" id="fullname" placeholder="Họ và tên">
 
-            <input type="email" placeholder="Email">
+            <input type="email" id="email" placeholder="Email">
 
-            <input type="tel" placeholder="Số điện thoại">
+            <input type="tel" id="phone" placeholder="Số điện thoại">
 
-            <input type="password" placeholder="Mật khẩu">
+            <input type="password" id="password" placeholder="Mật khẩu">
 
-            <input type="password" placeholder="Nhập lại mật khẩu">
+            <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu">
 
             <div class="dieu-khoan">
-                <input type="checkbox">
+                <input type="checkbox" id="agree">
                 <span>
                     Tôi đồng ý với Điều khoản sử dụng
                 </span>
             </div>
 
-            <button class="btn-register">
+            <button type="submit" class="btn-register">
                 Đăng ký
             </button>
 
@@ -77,19 +77,23 @@
 
             <div class="social-login">
 
-                <button class="google">
-                    Google
-                </button>
+            <button type="button" class="google">
+                <i class="fa-brands fa-google"></i>
+                    Đăng ký với Google
+            </button>
 
-                <button class="facebook">
-                    Facebook
-                </button>
+             <button type="button" class="facebook">
+                 <i class="fa-brands fa-facebook-f"></i>
+                    Đăng ký với Facebook
+            </button>
 
-            </div>
+        </div>
 
         </form>
 
     </div>
 
 </section>
+<script src="../js/register.js"></script>
 </body>
+</html>

@@ -89,6 +89,8 @@
     justify-content: space-between;
     align-items: center;
 
+    gap: 80px;
+
     padding: 80px;
 }
 .gioi-thieu{
@@ -112,13 +114,13 @@
     line-height: 1.7;
 }
 .register-box{
-    width: 500px;
+    width: 430px;
 
     background: white;
 
     padding: 35px;
 
-    border-radius: 20px;
+    border-radius: 12px;
 
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
@@ -136,7 +138,7 @@
 
     width: 100%;
 
-    padding: 14px;
+    padding: 10px;
 
     margin-bottom: 15px;
 
@@ -158,17 +160,19 @@
 .btn-register{
     width: 100%;
 
-    padding: 14px;
+    padding: 12px;
 
     border: none;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
-    background: orange;
+    margin-top: 10px;
+
+    background: rgb(10, 2, 122);
 
     color: white;
 
-    font-size: 18px;
+    font-size: 20px;
 
     cursor: pointer;
 }
@@ -185,17 +189,22 @@
 }
 
 .social-login button{
-    flex: 1;
 
-    padding: 12px;
+    width: 49%;
 
-    border: 1px solid #ddd;
-
-    background: white;
-
-    border-radius: 8px;
-
-    cursor: pointer;
+    font-size: 15px;
+    
+    padding: 10px;
+    
+    border-radius: 5px;
+    
+    border: none;
+}
+.facebook i{
+color: #1877f2;
+}
+.google i{
+    color:#45db37 ;
 }
 @media(max-width:768px){
 
@@ -214,11 +223,11 @@
     }
 
     .gioi-thieu h1{
-        font-size: 36px;
+        font-size: 45px;
     }
 
     .gioi-thieu h2{
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .gioi-thieu p{
