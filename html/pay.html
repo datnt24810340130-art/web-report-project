@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thanh toán</title>
-<link rel="stylesheet" href="../css/cart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="../css/pay.css">
 </head>
 <body>
 
-<div class="checkout">
+    <div class="nen">
 
-<h1>THANH TOÁN</h1>
+        <div class="menu-nho">
+            <a href="index.html">Trang chủ</a>
+            <a href="tours.html">Tour</a>
+        </div>
 
-<input type="text" placeholder="Họ và tên">
-<input type="text" placeholder="Số điện thoại">
-<input type="text" placeholder="Địa chỉ">
+        <div class="hop-thanh-toan">
+            <h1>Thanh toán tour</h1>
+            <p>Chọn tour và nhập thông tin thanh toán</p>
 
-<button>ĐẶT HÀNG</button>
+            <form>
+                <label>Chọn tour</label>
+                <select>
+                    <option>Hồ Hoàn Kiếm - 1.500.000 VNĐ</option>
+                    <option>Vịnh Hạ Long - 4.800.000 VNĐ</option>
+                    <option>Sa Pa - 5.200.000 VNĐ</option>
+                    <option>Tràng An - 1.800.000 VNĐ</option>
+                    <option>Sầm Sơn - 3.200.000 VNĐ</option>
+                    <option>Cố đô Huế - 4.500.000 VNĐ</option>
+                    <option>Phố cổ Hội An - 3.800.000 VNĐ</option>
+                    <option>Bà Nà Hills - 5.600.000 VNĐ</option>
+                    <option>Đà Lạt - 4.900.000 VNĐ</option>
+                    <option>Phú Quốc - 6.800.000 VNĐ</option>
+                    <option>Chợ nổi Cái Răng - 3.500.000 VNĐ</option>
+                    <option>Mũi Né - 4.200.000 VNĐ</option>
+                </select>
 
-</div>
+                <label>Họ và tên</label>
+                <input type="text" placeholder="Nhập họ và tên">
+
+                <label>Số điện thoại</label>
+                <input type="text" placeholder="Nhập số điện thoại">
+
+                <label>Email</label>
+                <input type="email" placeholder="Nhập email">
+
+                <label>Số người</label>
+                <input type="number" placeholder="Nhập số người">
+
+                <label>Ngày đi</label>
+                <input type="date">
+
+                <label>Phương thức thanh toán</label>
+                <select>
+                    <option>Thanh toán tiền mặt</option>
+                    <option>Chuyển khoản ngân hàng</option>
+                    <option>Thanh toán tại công ty</option>
+                </select>
+
+                <label>Ghi chú</label>
+                <textarea placeholder="Nhập ghi chú nếu có"></textarea>
+
+                <button type="submit">Xác nhận thanh toán</button>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
