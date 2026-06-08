@@ -156,6 +156,68 @@ header{
     border: 0px solid white;
 }
 
+.loi-ich{
+    padding: 80px;
+    background: white;
+}
+
+.noi-dung-loi-ich{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.ben-trai{
+    width: 50%;
+}
+
+.ben-phai{
+    width: 50%;
+}
+
+.ben-phai img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.tieu-de-nho{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.ben-trai h2{
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #123c69;
+}
+
+.muc-loi-ich{
+    margin-bottom: 35px;
+}
+
+.muc-loi-ich span{
+    display: inline-block;
+    background: #dce8ff;
+    color: #0b73c9;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.muc-loi-ich h3{
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.muc-loi-ich p{
+    color: #666;
+    line-height: 1.6;
+}
 
 .dia-diem h2{
   text-align: center;
@@ -196,6 +258,9 @@ header{
     width: 24%;
     background-color: white;
     border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .tour-hang-dau img{
     width: 100%;
@@ -203,6 +268,12 @@ header{
     border-radius: 10px;
     display: block;
     
+}
+.thong-tin-tour{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .thong-tin-tour h3{
     color: rgba(9, 16, 146, 0.92);
@@ -217,6 +288,25 @@ header{
 .thong-tin-tour span{
     color: rgb(255, 166, 0);
     font-size: 20px;
+}
+.gia-va-nut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.xem-chi-tiet{
+    background-color: #0b73c9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.xem-chi-tiet:hover{
+    background-color: #ff7a00;
 }
 .khung-footer{
     display: flex;
